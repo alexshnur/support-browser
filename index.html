@@ -2,19 +2,106 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Support browser</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 	<link href="css/support-browser.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-
+<div class="container" style="margin-top: 20px;">
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="https://github.com/alexshnur/" class="btn btn-success navbar-btn"><span>My page on GitHub</span></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More plugins <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://alexshnur.github.io/drag-n-drop-table-columns/">Drag & Drop Table Columns</a></li>
+							<li><a href="http://alexshnur.github.io/dynamic-url-params-from-in-form/">Dynamic URL params from/in form</a></li>
+							<li><a href="http://alexshnur.github.io/json-in-color/">JSON in color</a></li>
+							<li><a href="http://alexshnur.github.io/support-browser/">Support browser</a></li>
+							<li><a href="#">Resizable table columns</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More modules<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://alexshnur.github.io/remove-html-attributes/">Remove HTML attributes</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="clearfix">
+		<a href="https://github.com/alexshnur/support-browser/zipball/master" class="btn btn-primary"><span>Download .zip</span></a>
+		<a href="https://github.com/alexshnur/support-browser/tarball/master" class="btn btn-primary"><span>Download .tar.gz</span></a>
+		<a href="https://github.com/alexshnur/support-browser" class="btn btn-warning pull-right"><span>View on GitHub</span></a>
+	</section>
+	<h1>Support browser</h1>
+</div>
+<div class="container">
+	<blockquote>
+		<p class="text-info">Support languages</p>
+	</blockquote>
+	<h4>English</h4>
+	<p><code>supportBrowser({language: 'en'});</code></p>
+	<h4>Ukrainian</h4>
+	<p><code>supportBrowser({language: 'ua'});</code></p>
+	<h4>Russian</h4>
+	<p><code>supportBrowser({language: 'ru'});</code></p>
+	<blockquote>
+		<p class="text-info">Short name browsers</p>
+	</blockquote>
+	<p>
+		<b>Opera Browser:</b> opera<br>
+		<b>Google Chrome:</b> chrome<br>
+		<b>Safari Browser:</b> safari<br>
+		<b>Mozilla Firefox:</b> firefox<br>
+		<b>Internet Explorer:</b> msie<br>
+		<b>Trident:</b> trident
+	</p>
+	<blockquote>
+		<p class="text-info">How to use</p>
+	</blockquote>
+	<pre>
+&lt;body>
+...
+&lt;script type="text/javascript" src="js/support-browser.js">&lt;/script>
+&lt;script type="text/javascript">
+ supportBrowser({
+  language: 'ru',
+  browsers: [
+   {
+    browser: 'firefox',
+    version: 4
+   }
+  ]
+ });
+&lt;/script>
+&lt;/body>
+	</pre>
+</div>
 <script type="text/javascript" src="js/support-browser.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	supportBrowser({
 		language: 'ru',
 		browsers: [
 			{
 				browser: 'firefox',
-				version: 40
+				version: 4
 			}
 		]
 	});

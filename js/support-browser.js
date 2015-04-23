@@ -90,7 +90,7 @@
 			var browser = parametrs.browsers[i];
 			if (browser.browser === sb.browser && sb.version <= browser.version) {
 				document.getElementsByTagName('html')[0].className += ' bad-browser';
-				document.body.insertAdjacentHTML('beforeend', html(parametrs.language));
+				document.body.innerHTML = html(parametrs.language);
 			}
 		}
 	};
