@@ -1,4 +1,1 @@
-# support-browser
-Support browser
-
-How use
+# Support browser
