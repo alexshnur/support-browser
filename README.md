@@ -1,16 +1,40 @@
 # Support browser
 This script disables the operation of the site on the browsers mentioned in your script
 
+Support languages
 
+    English
+    supportBrowser({language: 'en'});
 
-    Support languages
+    Ukrainian
+    supportBrowser({language: 'ua'});
 
-English
+    Russian
+    supportBrowser({language: 'ru'});
 
-supportBrowser({language: 'en'});
-Ukrainian
+Short names of browsers
 
-supportBrowser({language: 'ua'});
-Russian
+    Opera Browser: opera
+    Google Chrome: chrome
+    Safari Browser: safari
+    Mozilla Firefox: firefox
+    Internet Explorer: msie
+    Trident: trident 
 
-supportBrowser({language: 'ru'});
+How to use
+
+    <body>
+    ...
+    <script type="text/javascript" src="js/support-browser.js"></script>
+    <script type="text/javascript">
+     supportBrowser({
+      language: 'ru',
+      browsers: [
+       {
+        browser: 'firefox',
+        version: 4
+       }
+      ]
+     });
+    </script>
+    </body>
